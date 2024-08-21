@@ -1,0 +1,121 @@
+html {
+    /*font-size: 62.5%;*/
+    font-size: 80%;
+    box-sizing: border-box;
+}
+
+* {
+	font-family: Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: auto;
+    width: 460px;
+    box-shadow: 9px 8px #0002;
+}
+
+.calculator-screen {
+	font-size: 5rem;
+    width: 100%;
+    height: 80px;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+button {
+	outline: 0;
+    cursor: pointer;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    font-size: 2rem;
+    color: #333;
+    box-shadow: 4px 3px #0002;
+    transition-duration: .1s;
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+}
+
+button:hover {
+    background-color: #eaeaea;
+}
+
+button:active {
+	transition-duration: 0s;
+	box-shadow: none;
+}
+
+.operator {
+	font-size: 27px;
+	font-weight: bold;
+    color: #337cac;
+}
+.function {
+	font-style: italic;
+    color: #339cac;
+}
+.constant {
+	font-style: italic;
+    color: #999c2c;
+}
+
+.all-clear {
+    background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: #f17377;
+}
+
+.delete-sign {
+	background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+}
+
+.delete-sign:hover {
+    background-color: #f17377;
+}
+
+.ans-sign {
+	
+}
+
+.equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+}
+
+.equal-sign:hover {
+    background-color: #4e9ed4;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 15px;
+}
+
+.hiddenSmall {
+	font-size: 10px;
+	text-decoration: line-through;
+}
